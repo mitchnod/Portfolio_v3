@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: seashell;
+    box-sizing: border-box;
+}
+
+.df{
+    display: flex;
+}
+
+.bc-light{
+    background-color: rgb(85,85,85);
+}
+
+.bc-dark{
+    background-color: rgb(51,51,51);
+}
+
+.border{
+    border-radius: 15px;
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#home{
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#home_header{
+    font-size: 8vw;
+}
+
+#nav-bar{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-links{
+    margin: 0 30px;
+    transition: 0.5s;
+}
+
+a:hover{
+    text-shadow: 0 0 15px seashell;
+}
+
+header{
+    font-size: 35px;
+    padding: 50px 0 30px 30px;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.grid-2{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 60% 40%;
+}
+
+.grid-4{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+
+#about_txt, #about_img{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#my_img{
+    width: 20vw;
+}
+
+li{
+    font-size: 19px;
+    margin-top: 10px;
+    list-style-position: inside;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.projects img{
+    width: 100%;
+    height: 100%;
+}
+
+#contact{
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 100px;
+}
+
+button{
+    align-items: center;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+button img{
+    height: 30px;
+    margin-right: 7px;
+}
+
+#email_btn{
+    background-color: grey;
+}
+
+#email_btn:hover{
+    background-color: rgb(110, 110, 110);
+}
+
+#github_btn{
+    background-color: rgb(94,110,186);
+}
+
+#github_btn:hover{
+    background-color: rgb(82, 96, 161);
+}
+
+#linkedin_btn{
+    background-color: rgb(73,117,180);
+}
+
+#linkedin_btn:hover{
+    background-color: rgb(63, 103, 158);
+}
+
+@media only screen and (max-width: 1024px){
+    #about_img{
+        display: none;
+    }
+    
+    .grid-2{
+        grid-template-columns: 100%;
+    }
+
+    .grid-4, .grid-3{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #nav-bar{
+        display: none;
+    }
+
+    .grid-4, .grid-3{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    button p{
+        display: none;
+    }
+
+    button img{
+        margin: 0;
+    }
+}
