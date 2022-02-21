@@ -19,7 +19,7 @@
 }
 
 .border{
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px;
 }
 
@@ -72,10 +72,10 @@ section{
     grid-gap: 10px;
 }
 
-.grid-2{
+/*.grid-2{
     grid-template-columns: repeat(2,1fr);
     grid-template-columns: 60% 40%;
-}
+}*/
 
 .grid-4{
     grid-template-columns: repeat(4,1fr);
@@ -87,9 +87,9 @@ section{
     text-align: center;
 }
 
-#my_img{
+/*#my_img{
     width: 20vw;
-}
+}*/
 
 li{
     font-size: 19px;
@@ -152,9 +152,9 @@ button img{
         display: none;
     }
     
-    .grid-2{
+    /*.grid-2{
         grid-template-columns: 100%;
-    }
+    }*/
 
     .grid-4{
         grid-template-columns: repeat(2,1fr);
