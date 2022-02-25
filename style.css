@@ -191,4 +191,8 @@ button img{
     button img{
         margin: 0;
     }
+
+    header{
+        font-size: 25px;
+    }
 }
