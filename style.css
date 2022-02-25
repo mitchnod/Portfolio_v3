@@ -29,7 +29,6 @@ p{
 
 #home{
     height: 100vh;
-    width: 100vw;
     align-items: center;
     justify-content: center;
 }
@@ -43,7 +42,6 @@ p{
     justify-content: center;
     width: 100%;
     height: 50px;
-    position: fixed;
 }
 
 a{
@@ -55,7 +53,7 @@ a{
     transition: 0.5s;
 }
 
-a:hover{
+.nav-links:hover{
     text-shadow: 0 0 15px seashell;
 }
 
@@ -101,13 +99,9 @@ h2{
     font-size: 30px;
 }
 
-.projects img{
+.project_img img, .wireframe_img img{
     width: 100%;
     height: 100%;
-}
-
-.projects p{
-    text-align: center;
 }
 
 #contact{
@@ -145,6 +139,26 @@ button img{
 
 #github_btn:hover, #email_btn:hover, #linkedin_btn:hover{
     opacity: 70%;
+}
+
+.project_img{
+    position: relative;
+}
+
+.project_description{
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.project_description:hover{
+    opacity: 1;
+    background-color: rgb(51,51,51);
 }
 
 @media only screen and (max-width: 1024px){
